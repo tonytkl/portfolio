@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website of Thiti Klinpon, Full Stack Software Engineer."
+    />
+    <title>Thiti Klinpon | Full Stack Software Engineer</title>
+    <link rel="icon" href="./assests/favicon/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      href="./assests/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assests/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assests/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assests/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <img
+            src="./assests/images/mainLogo.png"
+            alt="Thiti Klinpon logo"
+            width="36"
+            height="36"
+          />
+        </a>
+        <div class="nav-runner" aria-hidden="true">
+          <div class="runner-ground"></div>
+          <div class="runner-cactus runner-cactus-left"></div>
+          <div class="runner-cactus runner-cactus-right"></div>
+          <div class="runner-dino">
+            <span class="runner-dino-leg runner-dino-leg-back"></span>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <input
+            type="checkbox"
+            id="nav-toggle"
+            class="nav-toggle-checkbox"
+            aria-label="Toggle navigation"
+          />
+          <label
+            for="nav-toggle"
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container reveal">
+        <p class="eyebrow">Full Stack Software Engineer</p>
+        <h1>Thiti Klinpon</h1>
+        <p class="hero-summary">
+          Full stack software engineer with hands-on experience building
+          scalable web applications across frontend and backend systems. I focus
+          on clean, maintainable architecture and practical solutions that
+          improve developer speed and product reliability.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="btn btn-primary"
+            href="./assests/files/Resume_SD_TH.pdf"
+            download
+            >Download Resume</a
+          >
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/tonytkl"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+        <ul class="quick-info">
+          <li>Bangkok, Thailand</li>
+          <li>
+            <a href="mailto:thitiklinpon@gmail.com">thitiklinpon@gmail.com</a>
+          </li>
+          <li><a href="tel:+66957077947">095-707-7947</a></li>
+          <li>
+            <a
+              href="https://linkedin.com/in/tony-klinpon"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <h2>About</h2>
+        <div class="card">
+          <p>
+            I build and ship products end-to-end, from API design and
+            event-driven backend systems to responsive, user-focused interfaces.
+            I enjoy working in agile teams and turning complex requirements into
+            simple, reliable workflows.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="container section reveal">
+        <h2>Experiences</h2>
+        <div class="experience-list">
+          <article class="card timeline-item">
+            <div class="timeline-header">
+              <div class="entity-header">
+                <img
+                  src="./assests/images/manatal.jpeg"
+                  alt="Manatal logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Full Stack Software Engineer</h3>
+                  <p>Manatal • Bangkok, Thailand</p>
+                  <p class="timeline-date">March 2025 - Present</p>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Developed and deployed RESTful APIs with Django and FastAPI to
+                improve backend scalability and data handling efficiency.
+              </li>
+              <li>
+                Implemented event-driven architecture with RabbitMQ so
+                microservices can react to monolith events with reduced
+                coupling.
+              </li>
+              <li>
+                Integrated Keycloak OAuth client and external SPI for real-time
+                user sync from legacy monolith systems.
+              </li>
+              <li>
+                Built a custom AWS IAM-style permission model with per-role
+                allow and deny overrides, applied via endpoint decorators.
+              </li>
+              <li>
+                Delivered responsive Vue.js interfaces and improved state
+                management with Vuex for complex client-side interactions.
+              </li>
+            </ul>
+          </article>
+
+          <article class="card timeline-item">
+            <div class="timeline-header">
+              <div class="entity-header">
+                <img
+                  src="./assests/images/communityOfGuardians.jpeg"
+                  alt="Community of Guardians logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Software Developer</h3>
+                  <p>Community of Guardians • Remote, Canada</p>
+                  <p class="timeline-date">Dec 2024 - May 2025</p>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Spearheaded front-end development of the organization landing
+                page and collaborated with 3 developers to deploy it within 1
+                month.
+              </li>
+              <li>
+                Revamped the website design to improve user experience and
+                increased internal user satisfaction scores by 50%.
+              </li>
+              <li>
+                Maintained and optimized Strapi headless CMS performance,
+                reducing server response time by 10%.
+              </li>
+            </ul>
+          </article>
+
+          <article class="card timeline-item">
+            <div class="timeline-header">
+              <div class="entity-header">
+                <img
+                  src="./assests/images/theRedCarbon.jpg"
+                  alt="The Red Carbon logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Data Engineer</h3>
+                  <p>The Red Carbon • Bangkok, Thailand</p>
+                  <p class="timeline-date">Aug 2021 - Nov 2022</p>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Reduced manual report building by over 40% via automation using
+                Selenium to aggregate and publish customer data in Google
+                Sheets.
+              </li>
+              <li>
+                Implemented a PostgreSQL data warehouse and automated ETL
+                processes, decreasing average data request wait time by one day.
+              </li>
+              <li>
+                Enhanced a high-volume data dashboard by optimizing ETL
+                workflows, reducing processing time by 10%.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section reveal">
+        <h2>Featured Project</h2>
+        <article class="card project-card">
+          <div>
+            <h3>Satang</h3>
+            <p class="project-link">
+              <a
+                href="https://github.com/tonytkl/satang"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/tonytkl/satang</a
+              >
+            </p>
+          </div>
+          <ul>
+            <li>
+              Designed and built a serverless expense tracking platform for
+              wallets, budgets, categories, and transactions.
+            </li>
+            <li>
+              Implemented backend services in Go on AWS Lambda for scalable
+              event-driven processing.
+            </li>
+            <li>Exposed secure RESTful APIs with Amazon API Gateway.</li>
+            <li>
+              Modeled data in DynamoDB using Single Table Design with optimized
+              access patterns.
+            </li>
+            <li>
+              Managed infrastructure as code using Terraform for reproducible
+              and version-controlled deployment.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education" class="container section reveal">
+        <h2>Education & Certification</h2>
+        <div class="grid-two">
+          <article class="card">
+            <h3>Education</h3>
+            <ul class="education-list">
+              <li>
+                <img
+                  src="./assests/images/humber.svg"
+                  alt="Humber College logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>Humber College</strong><br />
+                  Diploma of Computer Programming, Honors<br />
+                  Toronto, ON, Canada • Jan 2023 - Aug 2024
+                </div>
+              </li>
+              <li>
+                <img
+                  src="./assests/images/rmit.svg"
+                  alt="RMIT University logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>RMIT University</strong><br />
+                  Bachelor of Aerospace Engineering, Honors<br />
+                  Melbourne, VIC, Australia • 2015 - 2016
+                </div>
+              </li>
+              <li>
+                <img
+                  src="./assests/images/ku.svg"
+                  alt="Kasetsart University logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>Kasetsart University</strong><br />
+                  Bachelor of Aerospace Engineering, Honors<br />
+                  Bangkok, Thailand • 2012 - 2015
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Certification</h3>
+            <ul class="education-list">
+              <li>
+                <img
+                  src="./assests/images/aws.svg"
+                  alt="Amazon Web Services logo"
+                  class="entity-logo"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>AWS Certified Cloud Practitioner</strong><br />
+                  Amazon Web Services Training and Certification<br />
+                  Dec 2025
+                </div>
+              </li>
+            </ul>
+            <h3 class="skills-heading">Core Skills</h3>
+            <ul class="skills-tags" aria-label="Core skills">
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>RabbitMQ</li>
+              <li>Keycloak</li>
+              <li>Vue.js</li>
+              <li>Vuex</li>
+              <li>Go</li>
+              <li>AWS Lambda</li>
+              <li>API Gateway</li>
+              <li>DynamoDB</li>
+              <li>Terraform</li>
+              <li>RESTful API Design</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer container reveal">
+      <p>Open to software engineering opportunities and collaboration.</p>
+      <div class="footer-links">
+        <a href="Resume_SD_TH.pdf" download>Resume</a>
+        <a href="mailto:thitiklinpon@gmail.com">Email</a>
+        <a
+          href="https://linkedin.com/in/tony-klinpon"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/tonytkl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
