@@ -512,6 +512,12 @@ h3 {
   font-weight: 600;
 }
 
+.education-date {
+  display: inline-block;
+  margin-top: 0.2rem;
+  color: var(--text-dim);
+}
+
 .project-card {
   border-left: 4px solid var(--accent);
 }
@@ -551,8 +557,18 @@ h3 {
   margin-bottom: 0.85rem;
 }
 
-.skills-heading {
-  margin-top: 1.2rem;
+.skills-groups {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills-group h4 {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
 }
 
 .skills-tags {
