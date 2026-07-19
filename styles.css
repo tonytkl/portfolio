@@ -482,6 +482,20 @@ h3 {
   color: var(--text-dim);
 }
 
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.company-meta {
+  margin: 0.2rem 0 0;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
 .experience-list {
   display: grid;
   gap: 1rem;
@@ -510,6 +524,90 @@ h3 {
 .timeline-date {
   color: var(--accent);
   font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.timeline-header .timeline-date {
+  color: var(--accent);
+}
+
+.experience-role {
+  margin: 0.6rem 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.03rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.experience-role-block {
+  margin-top: 0.65rem;
+  margin-left: 1.15rem;
+}
+
+.experience-role-block .timeline-date {
+  margin-bottom: 0;
+}
+
+.role-timeline {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.15rem;
+}
+
+.role-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: 0.36rem;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(111, 137, 255, 0.65),
+    rgba(255, 122, 162, 0.3)
+  );
+}
+
+.role-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.role-marker {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent-strong);
+  box-shadow: 0 0 0 4px rgba(79, 111, 255, 0.16);
+  z-index: 1;
+}
+
+.role-entry + .role-entry .role-marker {
+  background: var(--text-dim);
+  box-shadow: 0 0 0 4px rgba(157, 176, 197, 0.12);
+}
+
+.role-content h4 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.03rem;
+  letter-spacing: -0.01em;
+}
+
+.role-content ul {
+  margin-top: 0.85rem;
+}
+
+.role-summary {
+  margin-top: 1rem;
+  padding-left: 1.15rem;
 }
 
 .education-date {
@@ -848,8 +946,28 @@ h3 {
     height: 2.7rem;
   }
 
+  .experience-role-block {
+    margin-left: 3.6rem;
+  }
+
+  .company-header {
+    flex-direction: column;
+  }
+
+  .company-meta {
+    white-space: normal;
+  }
+
   .education-list li {
     grid-template-columns: 2.7rem 1fr;
+  }
+
+  .role-timeline {
+    padding-left: 1rem;
+  }
+
+  .role-summary {
+    padding-left: 1rem;
   }
 }
 

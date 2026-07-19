@@ -140,7 +140,7 @@
         <h2>Experiences</h2>
         <div class="experience-list">
           <article class="card timeline-item">
-            <div class="timeline-header">
+            <div class="timeline-header company-header">
               <div class="entity-header">
                 <img
                   src="./assests/images/manatal.jpeg"
@@ -149,35 +149,56 @@
                   loading="lazy"
                 />
                 <div>
-                  <h3>Full Stack Software Engineer</h3>
-                  <p>Manatal • Bangkok, Thailand</p>
-                  <p class="timeline-date">March 2025 - Present</p>
+                  <h3>Manatal</h3>
+                  <p>Full-time</p>
+                  <p>Bangkok City, Thailand</p>
                 </div>
               </div>
             </div>
-            <ul>
-              <li>
-                Developed and deployed RESTful APIs with Django and FastAPI to
-                improve backend scalability and data handling efficiency.
-              </li>
-              <li>
-                Implemented event-driven architecture with RabbitMQ so
-                microservices can react to monolith events with reduced
-                coupling.
-              </li>
-              <li>
-                Integrated Keycloak OAuth client and external SPI for real-time
-                user sync from legacy monolith systems.
-              </li>
-              <li>
-                Built a custom AWS IAM-style permission model with per-role
-                allow and deny overrides, applied via endpoint decorators.
-              </li>
-              <li>
-                Delivered responsive Vue.js interfaces and improved state
-                management with Vuex for complex client-side interactions.
-              </li>
-            </ul>
+
+            <div class="role-timeline">
+              <article class="role-entry role-current">
+                <div class="role-marker" aria-hidden="true"></div>
+                <div class="role-content">
+                  <h4>Software Engineer</h4>
+                  <p class="timeline-date">Jul 2026 - Present</p>
+                </div>
+              </article>
+
+              <article class="role-entry">
+                <div class="role-marker" aria-hidden="true"></div>
+                <div class="role-content">
+                  <h4>Associate Full Stack Software Engineer</h4>
+                  <p class="timeline-date">Mar 2025 - Jul 2026</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="role-summary">
+              <ul>
+                <li>
+                  Developed and deployed RESTful APIs with Django and FastAPI to
+                  improve backend scalability and data handling efficiency.
+                </li>
+                <li>
+                  Implemented event-driven architecture with RabbitMQ so
+                  microservices can react to monolith events with reduced
+                  coupling.
+                </li>
+                <li>
+                  Integrated Keycloak OAuth client and external SPI for real-
+                  time user sync from legacy monolith systems.
+                </li>
+                <li>
+                  Built a custom AWS IAM-style permission model with per-role
+                  allow and deny overrides, applied via endpoint decorators.
+                </li>
+                <li>
+                  Delivered responsive Vue.js interfaces and improved state
+                  management with Vuex for complex client-side interactions.
+                </li>
+              </ul>
+            </div>
           </article>
 
           <article class="card timeline-item">
@@ -190,27 +211,33 @@
                   loading="lazy"
                 />
                 <div>
-                  <h3>Software Developer</h3>
-                  <p>Community of Guardians • Remote, Canada</p>
-                  <p class="timeline-date">Dec 2024 - May 2025</p>
+                  <h3>Community of Guardians</h3>
+                  <p>Part-time</p>
+                  <p>Remote, Canada</p>
                 </div>
               </div>
             </div>
-            <ul>
-              <li>
-                Spearheaded front-end development of the organization landing
-                page and collaborated with 3 developers to deploy it within 1
-                month.
-              </li>
-              <li>
-                Revamped the website design to improve user experience and
-                increased internal user satisfaction scores by 50%.
-              </li>
-              <li>
-                Maintained and optimized Strapi headless CMS performance,
-                reducing server response time by 10%.
-              </li>
-            </ul>
+            <div class="experience-role-block">
+              <h4 class="experience-role">Software Developer</h4>
+              <p class="timeline-date">Dec 2024 - May 2025</p>
+            </div>
+            <div class="role-summary">
+              <ul>
+                <li>
+                  Spearheaded front-end development of the organization landing
+                  page and collaborated with 3 developers to deploy it within 1
+                  month.
+                </li>
+                <li>
+                  Revamped the website design to improve user experience and
+                  increased internal user satisfaction scores by 50%.
+                </li>
+                <li>
+                  Maintained and optimized Strapi headless CMS performance,
+                  reducing server response time by 10%.
+                </li>
+              </ul>
+            </div>
           </article>
 
           <article class="card timeline-item">
@@ -223,13 +250,18 @@
                   loading="lazy"
                 />
                 <div>
-                  <h3>Data Engineer</h3>
-                  <p>The Red Carbon • Bangkok, Thailand</p>
-                  <p class="timeline-date">Aug 2021 - Nov 2022</p>
+                  <h3>The Red Carbon</h3>
+                  <p>Full-time</p>
+                  <p>Bangkok, Thailand</p>
                 </div>
               </div>
             </div>
-            <ul>
+            <div class="experience-role-block">
+              <h4 class="experience-role">Data Engineer</h4>
+              <p class="timeline-date">Aug 2021 - Nov 2022</p>
+            </div>
+            <div class="role-summary">
+              <ul>
               <li>
                 Reduced manual report building by over 40% via automation using
                 Selenium to aggregate and publish customer data in Google
@@ -243,7 +275,8 @@
                 Enhanced a high-volume data dashboard by optimizing ETL
                 workflows, reducing processing time by 10%.
               </li>
-            </ul>
+              </ul>
+            </div>
           </article>
         </div>
       </section>
@@ -300,7 +333,7 @@
                 <div>
                   <strong>Humber College</strong><br />
                   Diploma of Computer Programming, Honors<br />
-                  <span class="education-date">Toronto, ON, Canada</span><br/>
+                  <span class="education-date">Toronto, ON, Canada</span><br />
                   <span class="education-date"> 2023 - Aug 2024</span>
                 </div>
               </li>
@@ -314,7 +347,8 @@
                 <div>
                   <strong>RMIT University</strong><br />
                   Bachelor of Aerospace Engineering, Honors<br />
-                  <span class="education-date">Melbourne, VIC, Australia</span><br/>
+                  <span class="education-date">Melbourne, VIC, Australia</span
+                  ><br />
                   <span class="education-date"> 2015 - 2016</span>
                 </div>
               </li>
@@ -328,7 +362,7 @@
                 <div>
                   <strong>Kasetsart University</strong><br />
                   Bachelor of Aerospace Engineering, Honors<br />
-                  <span class="education-date">Bangkok, Thailand</span><br/>
+                  <span class="education-date">Bangkok, Thailand</span><br />
                   <span class="education-date"> 2012 - 2015</span>
                 </div>
               </li>
