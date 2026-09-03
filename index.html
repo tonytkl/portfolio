@@ -177,21 +177,22 @@
             <div class="role-summary">
               <ul>
                 <li>
-                  Developed and deployed RESTful APIs with Django and FastAPI to
-                  improve backend scalability and data handling efficiency.
+                  Developed and deployed RESTful APIs with Django and FastAPI, leveraging Cursor and AI agents as development collaborators to accelerate implementation, testing, and refactoring while maintaining code quality and scalability.
                 </li>
                 <li>
-                  Implemented event-driven architecture with RabbitMQ so
-                  microservices can react to monolith events with reduced
-                  coupling.
+                  Implemented event-driven architecture with RabbitMQ, allowing microservices to seamlessly respond to legacy monolith events and reducing system coupling.
                 </li>
                 <li>
-                  Integrated Keycloak OAuth client and external SPI for real-
-                  time user sync from legacy monolith systems.
+                  Incorporated OAuth client by integrating Keycloak with external service provider interface (SPI) and syncing user data from external monolith server in real time.
                 </li>
                 <li>
-                  Built a custom AWS IAM-style permission model with per-role
-                  allow and deny overrides, applied via endpoint decorators.
+                  Engineered a custom, AWS IAM-style permission system enabling per-role access overrides (role, action, resource → allow/deny), selectively applied to designated endpoints via a custom decorator to preserve backward compatibility.
+                </li>
+                <li>
+                  Extended the MCP server to expose existing API capabilities as MCP tools, enabling AI agents to interact with backend services while reusing established business logic and maintaining a consistent authorization model.
+                </li>
+                <li>
+                  Standardized service-to-service authentication by migrating static tokens to JWT-based authentication, enabling validation of scope, issuer, audience, and authorized party for more secure internal communication.
                 </li>
                 <li>
                   Delivered responsive Vue.js interfaces and improved state
@@ -395,6 +396,7 @@
                   <li>FastAPI</li>
                   <li>RabbitMQ</li>
                   <li>Keycloak</li>
+                  <li>MCP Server</li>
                   <li>RESTful API Design</li>
                 </ul>
               </section>
